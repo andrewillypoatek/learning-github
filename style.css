@@ -1,0 +1,96 @@
+/* ============================================
+   🎨 EASY EDITS — change these values freely!
+   ============================================ */
+
+:root {
+  --background-color: #f0f4ff;   /* try: #fff8e7, #1a1a2e, #e8f5e9 */
+  --card-color: #ffffff;         /* try: #fffde7, #2a2a3e, #f1f8e9 */
+  --text-color: #222222;         /* try: #ffffff, #333333            */
+  --heading-color: #3a3af4;      /* try: #e91e63, #ff6f00, #2e7d32  */
+  --subheading-color: #888888;   /* try: #aaaaaa, #555555            */
+  --button-color: #3a3af4;       /* try: #e91e63, #ff6f00, #2e7d32  */
+  --button-text-color: #ffffff;  /* try: #000000                     */
+  --button-hover-color: #2222cc; /* try: #c2185b, #e65100            */
+  --font-family: sans-serif;     /* try: Georgia, monospace, cursive */
+  --border-radius: 16px;         /* try: 0px, 8px, 32px              */
+}
+
+/* ============================================
+   Layout — you probably don't need to touch this
+   ============================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  background-color: var(--card-color);
+  border-radius: var(--border-radius);
+  padding: 40px 32px;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero-image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--heading-color);
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--subheading-color);
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+button {
+  margin-top: 8px;
+  padding: 12px 28px;
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.message {
+  font-size: 0.9rem;
+  color: var(--heading-color);
+  min-height: 1.4em;
+}
